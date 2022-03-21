@@ -1,0 +1,38 @@
+<!--include header-->
+<%- include('include/_header')%>
+    <!--/include header-->
+    <!--Main Site-->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter"><a href="/"><i class="fas fa-angle-double-left"></i>All Bands</a></div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">Update User</h2>
+                <span class="text-light">Use the form below to update information</span>
+            </div>
+            <!--add user form-->
+            <form method="post" id="update_user">
+                <div class="new_user">
+                    <div class="form-group"><label for="BandName" class="text-light">BandName</label>
+                        <input type="hidden" name="id" value="<%=user._id%>">
+                        <input type="text" name="BandName" value="<%=user.BandName%>" placeholder="Type band name here"></div>
+                    <div class="form-group"><label for="Genre" class="text-light">Genre</label>
+                        <input type="text" name="Genre" value="<%=user.Genre%>" placeholder="Type your band genre"></div>
+                    <div class="form-group"><label for="Country" class="text-light">Country</label>
+                        <input type="text" name="Country" value="<%=user.Country%>" placeholder="State your country"></div>
+                    <div class="form-group"><label for="Status" class="text-light">Status</label>
+                        <div class="radio-inline"><input type="radio" name="Status" value="Active">
+                            <label for="Status" class="text-light">Active</label></div>
+                        <div class="radio-inline"><input type="radio" name="Status" value="Inactive">
+                            <label for="Status" class="text-light">Inactive</label></div>
+                    </div>
+                    <div class="form-group"><button type="submit" class="btn text-dark update">Save</button></div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!--/Main Site-->
+    <!--include footer-->
+    <%- include('include/_footer')%>
+        <!--/include footer-->

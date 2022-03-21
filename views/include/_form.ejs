@@ -1,0 +1,19 @@
+<!--Form Handling-->
+<form action="/api/myFirstDatabase" method="post" id="add_user">
+    <div class="new_user">
+        <div class="form-group"><label for="BandName" class="text-light">BandName</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="BandName" value="" placeholder="Type band name here"></div>
+        <div class="form-group"><label for="Genre" class="text-light">Genre</label>
+            <input type="text" name="Genre" value="" placeholder="Type your band genre"></div>
+        <div class="form-group"><label for="Country" class="text-light">Country</label>
+            <input type="text" name="Country" value="" placeholder="State your country"></div>
+        <div class="form-group"><label for="Status" class="text-light">Status</label>
+            <div class="radio-inline"><input type="radio" name="Status" value="Active">
+                <label for="Status" class="text-light">Active</label></div>
+            <div class="radio-inline"><input type="radio" name="Status" value="Inactive">
+                <label for="Status" class="text-light">Inactive</label></div>
+        </div>
+        <div class="form-group"><button type="submit" class="btn text-dark update">Save</button></div>
+    </div>
+</form>
