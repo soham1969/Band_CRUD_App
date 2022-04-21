@@ -7,7 +7,7 @@ exports.homeRoutes = (req, res) => {
             res.render('index', { myFirstDatabase: response.data });
         })
         .catch(err => {
-            res.send(err)
+            res.send(err) 
         })
 }
 exports.add_user = (req, res) => {

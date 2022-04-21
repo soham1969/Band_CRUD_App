@@ -16,3 +16,7 @@ var schema = new mongoose.Schema({
 })
 const Userdb = mongoose.model('userdb', schema);
 module.exports = Userdb;
+
+// sudo service mongodb start // for starting mongoDB service
+
+//https://docs.docker.com/engine/install/linux-postinstall/
